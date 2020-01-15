@@ -19,6 +19,7 @@ public class Mailinator {
 
 	public void openInbox(String email) {
 		DriverManager.getDriver().get(inboxUrl);
+		tbxInbox.waitForVisibility();
 		tbxInbox.clear();
 		tbxInbox.type(email.replace("@mailinator.com", ""));
 		tbxInbox.type(Keys.ENTER);

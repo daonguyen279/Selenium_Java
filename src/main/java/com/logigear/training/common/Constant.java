@@ -27,8 +27,10 @@ public class Constant {
  
 
 	public static String DEPART_FROM = "Nha Trang";
-	public static String ARRIVE_AT = "Sài Gòn";
+	public static String ARRIVE_AT = "Huáº¿";
 	public static String SEAT_TYPE = "Soft seat with air conditioner";
+	public static int DEPART_DATE = 16;
+	public static int TICKET_AMOUNT = 5;
 	
 }
 

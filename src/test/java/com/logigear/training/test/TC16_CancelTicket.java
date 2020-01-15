@@ -1,5 +1,7 @@
 package com.logigear.training.test;
 import org.testng.annotations.Test;
+
+import com.logigear.training.common.Constant;
 import com.logigear.training.page.BookTicketPage;
 import com.logigear.training.page.LoginPage;
 import com.logigear.training.page.Mailinator;
@@ -16,11 +18,11 @@ public class TC16_CancelTicket extends BaseTest {
 		registerPage.registerAndLoginWithRandomValue();
 		BookTicketPage bookTicketPage = new BookTicketPage();
 		bookTicketPage.open();
-		bookTicketPage.selectDepartDate(10);
-		bookTicketPage.selectDepartFrom("Nha Trang");
-		bookTicketPage.selectArriveAt("Sài Gòn");
-		bookTicketPage.selectSeatType("Soft seat with air conditioner");
-		bookTicketPage.selectTicketAmount(5);
+		bookTicketPage.selectDepartDate(Constant.DEPART_DATE);
+		bookTicketPage.selectDepartFrom(Constant.DEPART_FROM);
+		bookTicketPage.selectArriveAt(Constant.ARRIVE_AT);
+		bookTicketPage.selectSeatType(Constant.SEAT_TYPE);
+		bookTicketPage.selectTicketAmount(Constant.TICKET_AMOUNT);
 		bookTicketPage.bookTicket();
 
 		MyTicketPage myTicketPage = new MyTicketPage();

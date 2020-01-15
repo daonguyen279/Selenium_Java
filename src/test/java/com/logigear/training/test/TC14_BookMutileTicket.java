@@ -20,11 +20,11 @@ public class TC14_BookMutileTicket extends BaseTest {
 
 		BookTicketPage bookTicketPage = new BookTicketPage();
 		bookTicketPage.open();
-		bookTicketPage.selectDepartDate(16);
+		bookTicketPage.selectDepartDate(Constant.DEPART_DATE);
 		bookTicketPage.selectDepartFrom(Constant.DEPART_FROM);
 		bookTicketPage.selectArriveAt(Constant.ARRIVE_AT);
 		bookTicketPage.selectSeatType(Constant.SEAT_TYPE);
-		bookTicketPage.selectTicketAmount(5);
+		bookTicketPage.selectTicketAmount(Constant.TICKET_AMOUNT);
 		bookTicketPage.bookTicket();
 		Assert.assertEquals(bookTicketPage.getBookTicketSuccessMessageText(), Constant.BOOK_TICKET_SUCCESS_MESSAGE);
 	}

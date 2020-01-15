@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.logigear.training.test.TC10_CreateAccountWithUsedEmail">
+      <class name="com.logigear.training.test.TC14_BookMutileTicket">
         <methods>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
+          <include name="TC14"/>
           <include name="afterClass"/>
-          <include name="TC10"/>
         </methods>
-      </class> <!-- com.logigear.training.test.TC10_CreateAccountWithUsedEmail -->
+      </class> <!-- com.logigear.training.test.TC14_BookMutileTicket -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
