@@ -27,6 +27,12 @@ public class TC14_BookMutileTicket extends BaseTest {
 		bookTicketPage.selectTicketAmount(Constant.TICKET_AMOUNT);
 		bookTicketPage.bookTicket();
 		Assert.assertEquals(bookTicketPage.getBookTicketSuccessMessageText(), Constant.BOOK_TICKET_SUCCESS_MESSAGE);
+		Assert.assertEquals(bookTicketPage.getTextFromDepartmentFrom(), Constant.DEPART_FROM);
+		Assert.assertEquals(bookTicketPage.getTextFromArriveAt(), Constant.ARRIVE_AT);
+//		Assert.assertEquals(bookTicketPage.getTextFromDepartmentDay(), bookticketpage.getDepartmentDay());
+		Assert.assertEquals(bookTicketPage.getTextFromAmount(), Constant.TICKET_AMOUNT);
+		Assert.assertEquals(bookTicketPage.getTextFromSeatType(), Constant.SEAT_TYPE);
 	}
+	
 
 }
