@@ -6,30 +6,27 @@ import org.openqa.selenium.NoSuchElementException;
 import com.logigear.training.common.ElementHelper;
 
 public class BasePage {
-	By menuLocator;
+	ElementHelper lnkMyAccount = new ElementHelper(By.cssSelector("ul.head-menu > li:nth-of-type(5) [href='#']"));
 
-	ElementHelper lnkMenu;
+	ElementHelper lnkLogout = new ElementHelper(By.cssSelector("a[href='logout.do']"));
 
-	ElementHelper lnkMyAccount = new ElementHelper(By.id("account"));
+	ElementHelper txtLoginSuccessMessage = new ElementHelper(By.cssSelector("a[href='#Welcome']"));
 
-	ElementHelper lnkLogout = new ElementHelper(By.xpath("//span[.='Log out']"));
-
-	public BasePage(By menuLocator) {
-		this.menuLocator = menuLocator;
-		lnkMenu = new ElementHelper(menuLocator);
-	}
 	public void clickMyAccount() {
+		txtLoginSuccessMessage.click();
 		lnkMyAccount.click();
+	}
+
+	public String getLoginSuccessText() {
+		return txtLoginSuccessMessage.getText();
 	}
 
 	public void logout() {
 		try {
+			txtLoginSuccessMessage.click();
 			lnkLogout.click();
 		} catch (NoSuchElementException ex) {
 
 		}
-	}
-	public void open() {
-		lnkMenu.click();
 	}
 }
