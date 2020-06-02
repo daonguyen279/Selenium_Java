@@ -12,12 +12,12 @@ public class DA_LOGIN_TC006_VerifyPasswordInputIsCaseSensitive extends BaseTest 
 
     @Test
     public void DA_LOGIN_TC006() {
-        loginPage.loginWith(Constant.VALID_USERNAME, Constant.UPPERCASEPASSWORD);
+        loginPage.loginWith(Constant.VALID_USERNAME, Constant.UPPERCASE_PASSWORD);
         Assert.assertEquals( Constant.VALID_USERNAME, basePage.getLoginSuccessText());
         basePage.logout();
         LoginPage loginPage = new LoginPage();
-        loginPage.loginWith(Constant.VALID_USERNAME, Constant.LOWERPASSWORD);
-
-        }
+        loginPage.loginWith(Constant.VALID_USERNAME, Constant.LOWER_PASSWORD);
+        Assert.assertEquals(Constant.PASSWORD_ERR_MESSAGE, loginPage.getPasswordErrorMessage());
+    }
 
 }

@@ -1,5 +1,6 @@
 package com.logigear.training.page;
 
+import com.logigear.training.common.DriverManager;
 import org.openqa.selenium.By;
 
 import com.logigear.training.common.ElementHelper;
@@ -9,8 +10,6 @@ public class LoginPage extends BasePage {
 
 	ElementHelper tbxPassword = new ElementHelper(By.id("password"));
 
-	ElementHelper cbbRespository = new ElementHelper(By.xpath("//select[@id='repository']/option[contains(text(),'SampleRepositoryLV2')]"));
-
 	ElementHelper btnLogIn = new ElementHelper(By.className("btn-login"));
 
 	public void loginWith(String Username, String Password) {
@@ -19,8 +18,8 @@ public class LoginPage extends BasePage {
 		btnLogIn.click();
 	}
 
-	public void clickRespository(){
-		cbbRespository.click();
+	public String getPasswordErrorMessage() {
+		return DriverManager.getDriver().switchTo().alert().getText();
 	}
 
 }

@@ -16,7 +16,7 @@ public class BasePage {
 		return txtLoginSuccessMessage.getText();
 	}
 
-	public void selectRepository(){
+	public void switchRepository(){
 		cbbRepository.click();
 		lnkRepository.click();
 	}

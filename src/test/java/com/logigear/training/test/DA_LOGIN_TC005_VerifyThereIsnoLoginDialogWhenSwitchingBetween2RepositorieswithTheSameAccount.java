@@ -14,7 +14,7 @@ public class DA_LOGIN_TC005_VerifyThereIsnoLoginDialogWhenSwitchingBetween2Repos
     @Test
     public void DA_LOGIN_TC005(){
         loginPage.loginWith(Constant.VALID_USERNAME, Constant.UPPERCASEPASSWORD);
-        basePage.selectRepository();
+        basePage.switchRepository();
         Assert.assertEquals( Constant.VALID_USERNAME, basePage.getLoginSuccessText());
         Assert.assertEquals( Constant.REPONSITORYNAME, basePage.checkReponsitory());
     }
