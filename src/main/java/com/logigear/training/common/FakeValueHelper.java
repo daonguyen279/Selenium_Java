@@ -8,16 +8,14 @@ import com.github.javafaker.service.RandomService;
 
 public class FakeValueHelper {
 
-	static FakeValuesService fakeValuesService = new FakeValuesService(new Locale("en-GB"), new RandomService());
+    static FakeValuesService fakeValuesService = new FakeValuesService(new Locale("en-GB"), new RandomService());
+    static Faker faker = new Faker();
 
-	static Faker faker = new Faker();
+    public static FakeValuesService getFakeValuesService() {
+        return fakeValuesService;
+    }
 
-	public static FakeValuesService getFakeValuesService() {
-		return fakeValuesService;
-	}
-
-	public static Faker getFaker() {
-		return faker;
-	}
-
+    public static Faker getFaker() {
+        return faker;
+    }
 }
