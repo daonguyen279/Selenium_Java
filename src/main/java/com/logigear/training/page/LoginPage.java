@@ -9,25 +9,9 @@ public class LoginPage extends BasePage {
 
 	ElementHelper tbxPassword = new ElementHelper(By.id("password"));
 
-	ElementHelper btnLogIn = new ElementHelper(By.xpath("//input[@value='login']"));
+	ElementHelper cbbRespository = new ElementHelper(By.xpath("//select[@id='repository']/option[contains(text(),'SampleRepositoryLV2')]"));
 
-	ElementHelper lnkForgotPassword = new ElementHelper(By.xpath("//a[@href = '/Account/ForgotPassword.cshtml']"));
-
-	ElementHelper txtLoginErrorMessage = new ElementHelper(By.cssSelector(".message"));
-
-	ElementHelper txtLoginSuccessMessage = new ElementHelper(By.cssSelector(".account"));
-
-	public LoginPage() {
-		super(By.xpath("//span[.='Login']"));
-	}
-
-	public String getLoginErrorMessageText() {
-		return txtLoginErrorMessage.getText();
-	}
-
-	public String getLoginSuccessMessageText() {
-		return txtLoginSuccessMessage.getText();
-	}
+	ElementHelper btnLogIn = new ElementHelper(By.className("btn-login"));
 
 	public void loginWith(String Username, String Password) {
 		tbxUserName.type(Username);
@@ -35,7 +19,8 @@ public class LoginPage extends BasePage {
 		btnLogIn.click();
 	}
 
-	public void clickForgotPassword() {
-		lnkForgotPassword.click();
+	public void clickRespository(){
+		cbbRespository.click();
 	}
+
 }
