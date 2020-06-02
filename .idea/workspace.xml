@@ -1,101 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="da14b3f7-f740-415f-905a-110c3b94f0f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/seleniumtesting.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/seleniumtesting.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seleniumtesting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumtesting.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/common/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/logigear/training/common/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/BookTicketPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/ChangePasswordPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/ForgotPasswordPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/MyTicketPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/PasswordResetPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/RegisterPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/TicketPricePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/logigear/training/page/TimetablePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC01_ValidLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC02_LoginWithBlankUserName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC03_LoginWithInvalidPassword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC04_RedirectToBookTicketPageAfterLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC07_CreateNewAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC08_LoginWithInactiveAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC09_ChangePasswordWithDiffrentNewAndConfirmPassword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC10_CreateAccountWithUsedEmail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC11_CreateAccountWithPasswordAndPidEmpty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC12_ResetPasswordWithBlankResetToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC13_ResetPasswordWithDifferentPasswordAndConfirmPassword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC14_BookMutileTicket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC15_TicketPageDispLayAfterClickOnCheckprice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC16_CancelTicket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/common/AccountInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/logigear/training/common/AccountInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/common/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/logigear/training/common/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/common/DriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/logigear/training/common/DriverManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/common/ElementHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/logigear/training/common/ElementHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/common/FakeValueHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/logigear/training/common/FakeValueHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/logigear/training/page/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/BookTicketPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/ChangePasswordPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/ForgotPasswordPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/logigear/training/page/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/Mailinator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/logigear/training/page/Mailinator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/MyTicketPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/PasswordResetPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/RegisterPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/TicketPricePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/logigear/training/page/TimetablePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC01_ValidLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC02_LoginWithBlankUserName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC03_LoginWithInvalidPassword.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC04_RedirectToBookTicketPageAfterLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC07_CreateNewAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC08_LoginWithInactiveAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC09_ChangePasswordWithDiffrentNewAndConfirmPassword.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC10_CreateAccountWithUsedEmail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC11_CreateAccountWithPasswordAndPidEmpty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC12_ResetPasswordWithBlankResetToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC13_ResetPasswordWithDifferentPasswordAndConfirmPassword.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC14_BookMutileTicket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC15_TicketPageDispLayAfterClickOnCheckprice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/logigear/training/test/TC16_CancelTicket.class" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="845367719">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="77" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="77" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="seleniumtesting" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/page/BasePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/ElementHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/DriverManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#171#172#0" expanded="true" />
+                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/page/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="42" />
+              <folding>
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/FakeValueHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/AccountInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC02_LoginWithBlankUserName.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC04_RedirectToBookTicketPageAfterLogin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC07_CreateNewAccount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/logigear/training/page/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/logigear/training/common/Constant.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield.java" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -103,21 +217,114 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectId" id="1ciahvVelVYzckwmGT0tPcTvyBs" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1260" />
+    <option name="height" value="944" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seleniumtesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenium_Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591004304910" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591093607957" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -127,7 +334,105 @@
       <recent name="com.logigear.training.test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield">
+    <configuration name="DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumtesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.logigear.training.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.logigear.training.test" />
+      <option name="MAIN_CLASS_NAME" value="com.logigear.training.test.DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumtesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.logigear.training.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.logigear.training.test" />
+      <option name="MAIN_CLASS_NAME" value="com.logigear.training.test.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumtesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.logigear.training.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.logigear.training.test" />
+      <option name="MAIN_CLASS_NAME" value="com.logigear.training.test.DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumtesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.logigear.training.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.logigear.training.test" />
+      <option name="MAIN_CLASS_NAME" value="com.logigear.training.test.DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="TestNG" factoryName="TestNG">
+      <module name="seleniumtesting" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="Java" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,91 +495,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumtesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.logigear.training.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.logigear.training.test" />
-      <option name="MAIN_CLASS_NAME" value="com.logigear.training.test.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumtesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.logigear.training.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.logigear.training.test" />
-      <option name="MAIN_CLASS_NAME" value="com.logigear.training.test.DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumtesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.logigear.training.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.logigear.training.test" />
-      <option name="MAIN_CLASS_NAME" value="com.logigear.training.test.DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Unnamed" type="TestNG">
-      <module name="seleniumtesting" />
-      <useClassPathOnly />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="13" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="TestNG.Unnamed" />
       <item itemvalue="TestNG.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive" />
       <item itemvalue="TestNG.DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly" />
       <item itemvalue="TestNG.DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly" />
-      <item itemvalue="TestNG.Unnamed" />
+      <item itemvalue="TestNG.DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive" />
-        <item itemvalue="TestNG.DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly" />
+        <item itemvalue="TestNG.DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield" />
         <item itemvalue="TestNG.DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly" />
+        <item itemvalue="TestNG.DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly" />
+        <item itemvalue="TestNG.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive" />
       </list>
     </recent_temporary>
   </component>
@@ -292,80 +525,60 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unnamed - 2020.06.01 at 16h 32m 49s.xml">
+      <configuration name="Unnamed" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield - 2020.06.02 at 17h 23m 43s.xml">
+      <configuration name="DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield - 2020.06.02 at 17h 25m 41s.xml">
+      <configuration name="DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield" configurationId="TestNG" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1274000" />
+    <option name="totallyTimeSpent" value="5041000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49913943" visible="true" weight="0.37055016" />
+      <window_info id="Structure" order="1" sideWeight="0.5008606" side_tool="true" weight="0.37055016" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5008606" side_tool="true" weight="0.37055016" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49838188" visible="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49919093" weight="0.3290993" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50161815" side_tool="true" visible="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49919093" weight="0.3290993" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3290993" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591026983116">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1591026983116" />
-    <state x="110" y="120" width="1060" height="440" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591029576544">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="110" y="120" width="1060" height="440" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1591029576544" />
-    <state x="420" y="45" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1591026981514">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="420" y="45" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.680@0.0.1280.680" timestamp="1591026981514" />
-    <state x="389" y="209" width="501" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591027342789">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="389" y="209" width="501" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1591027342789" />
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591027205263">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1591027205263" />
-    <state width="1202" height="185" key="GridCell.Tab.0.bottom" timestamp="1591031260100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="185" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591031260100" />
-    <state width="1202" height="185" key="GridCell.Tab.0.center" timestamp="1591031260100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="185" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591031260100" />
-    <state width="1202" height="185" key="GridCell.Tab.0.left" timestamp="1591031260100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="185" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591031260100" />
-    <state width="1202" height="185" key="GridCell.Tab.0.right" timestamp="1591031260100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="185" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591031260100" />
-    <state width="1202" height="185" key="GridCell.Tab.1.bottom" timestamp="1591031260100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="185" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591031260100" />
-    <state width="1202" height="185" key="GridCell.Tab.1.center" timestamp="1591031260100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="185" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1591031260100" />
-    <state width="1202" height="185" key="GridCell.Tab.1.left" timestamp="1591031260100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="185" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1591031260100" />
-    <state width="1202" height="185" key="GridCell.Tab.1.right" timestamp="1591031260100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1202" height="185" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1591031260100" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1591014052941">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1591014052941" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,9 +586,266 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive.java</url>
           <line>20</line>
+          <properties />
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/AccountInfo.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/AccountInfo.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC01_ValidLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC02_LoginWithBlankUserName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC04_RedirectToBookTicketPageAfterLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC07_CreateNewAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/TC08_LoginWithInactiveAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/AccountInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC009_VerifyThatUsernameWithSpecialCharactersIsWorkingCorrectly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/FakeValueHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/page/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/ElementHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/page/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/logigear/training/common/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/logigear/training/test/DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInputEnteredToPasswordAndUsernamefield.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.7 (coda) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Java</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>seleniumtesting</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.beust:jcommander:1.72</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
