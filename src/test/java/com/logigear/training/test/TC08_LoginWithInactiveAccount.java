@@ -3,8 +3,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.logigear.training.common.AccountInfo;
 import com.logigear.training.common.Constant;
-import com.logigear.training.page.LoginPage;
-import com.logigear.training.page.RegisterPage;
+import com.logigear.training.pages.LoginPage;
+import com.logigear.training.pages.RegisterPage;
 
 
 public class TC08_LoginWithInactiveAccount extends BaseTest {
