@@ -1,4 +1,4 @@
-package com.logigear.training.common;
+package com.logigear.training.utilities;
 
 import java.util.Locale;
 
@@ -6,7 +6,7 @@ import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
 
-public class Common {
+public class FakeValueHelper {
 
 	static FakeValuesService fakeValuesService = new FakeValuesService(new Locale("en-GB"), new RandomService());
 
