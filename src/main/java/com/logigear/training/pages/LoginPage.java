@@ -1,32 +1,24 @@
 package com.logigear.training.pages;
 
+import com.logigear.training.drivermanager.DriverManager;
 import org.openqa.selenium.By;
 
 import com.logigear.training.controls.ElementHelper;
 
-public class LoginPage extends BasePage {
+public class LoginPage {
 	ElementHelper tbxUserName = new ElementHelper(By.id("username"));
 
 	ElementHelper tbxPassword = new ElementHelper(By.id("password"));
 
-	ElementHelper btnLogIn = new ElementHelper(By.xpath("//input[@value='login']"));
+	ElementHelper btnLogIn = new ElementHelper(By.className("btn-login"));
 
-	ElementHelper lnkForgotPassword = new ElementHelper(By.xpath("//a[@href = '/Account/ForgotPassword.cshtml']"));
 
-	ElementHelper txtLoginErrorMessage = new ElementHelper(By.cssSelector(".message"));
-
-	ElementHelper txtLoginSuccessMessage = new ElementHelper(By.cssSelector(".account"));
-
-	public LoginPage() {
-		super(By.xpath("//span[.='Login']"));
-	}
-
+//	public LoginPage() {
+//		super(By.xpath("//span[.='Login']"));
+//	}
+//
 	public String getLoginErrorMessageText() {
-		return txtLoginErrorMessage.getText();
-	}
-
-	public String getLoginSuccessMessageText() {
-		return txtLoginSuccessMessage.getText();
+		return DriverManager.getDriver().switchTo().alert().getText();
 	}
 
 	public void loginWith(String Username, String Password) {
@@ -35,7 +27,8 @@ public class LoginPage extends BasePage {
 		btnLogIn.click();
 	}
 
-	public void clickForgotPassword() {
-		lnkForgotPassword.click();
+	public void loginWithBlankUsernameAndPassword() {
+		btnLogIn.click();
 	}
+
 }
