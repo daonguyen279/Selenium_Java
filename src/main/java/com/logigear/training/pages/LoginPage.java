@@ -1,9 +1,8 @@
 package com.logigear.training.pages;
-
 import com.logigear.training.drivermanager.DriverManager;
 import org.openqa.selenium.By;
 
-import com.logigear.training.controls.ElementHelper;
+import com.logigear.training.utilities.ElementHelper;
 
 public class LoginPage {
 	ElementHelper tbxUserName = new ElementHelper(By.id("username"));
@@ -12,11 +11,6 @@ public class LoginPage {
 
 	ElementHelper btnLogIn = new ElementHelper(By.className("btn-login"));
 
-
-//	public LoginPage() {
-//		super(By.xpath("//span[.='Login']"));
-//	}
-//
 	public String getLoginErrorMessageText() {
 		return DriverManager.getDriver().switchTo().alert().getText();
 	}

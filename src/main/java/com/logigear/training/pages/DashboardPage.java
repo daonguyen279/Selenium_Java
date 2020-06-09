@@ -3,7 +3,7 @@ package com.logigear.training.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 
-import com.logigear.training.controls.ElementHelper;
+import com.logigear.training.utilities.ElementHelper;
 
 public class DashboardPage {
 	ElementHelper lnkMyAccount = new ElementHelper(By.cssSelector("ul.head-menu > li:nth-of-type(5) [href='#']"));

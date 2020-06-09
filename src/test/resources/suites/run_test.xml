@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
-    <test name="Test">
+    <test name="ChromeBrowserTest">
+        <parameter name="browser" value="Chrome"/>
         <classes>
-            <class name="com.logigear.training.test.TC08_LoginWithInactiveAccount" />
+            <class name="com.logigear.training.test.BaseTest"/>
+<!--            <class name="com.logigear.training.test.TC001"/>-->
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
