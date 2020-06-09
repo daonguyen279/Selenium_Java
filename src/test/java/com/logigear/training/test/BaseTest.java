@@ -3,10 +3,7 @@ package com.logigear.training.test;
 import com.logigear.training.common.Constant;
 import com.logigear.training.drivermanager.DriverManager;
 import com.logigear.training.utilities.BrowserHelper;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 public class BaseTest {
     @Parameters("browser")

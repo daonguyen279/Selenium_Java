@@ -18,7 +18,7 @@ public class DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive extends BaseTes
 		loginPage = new LoginPage();
 		loginPage.loginWith(Constant.LOWERCASE_USERNAME, Constant.PASSWORD);
 		dashboardPage = new DashboardPage();
-		Assert.assertEquals( Constant.LOWERCASE_USERNAME, dashboardPage.getLoginSuccessText());
+		Assert.assertEquals( Constant.LOWERCASE_USERNAME.toUpperCase(), dashboardPage.getLoginSuccessText());
 	}
 
 }

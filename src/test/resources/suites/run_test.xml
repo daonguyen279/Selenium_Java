@@ -4,8 +4,8 @@
     <test name="ChromeBrowserTest">
         <parameter name="browser" value="Chrome"/>
         <classes>
-            <class name="com.logigear.training.test.BaseTest"/>
-<!--            <class name="com.logigear.training.test.TC001"/>-->
+            <class name="com.logigear.training.test.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive"/>
+            <class name="com.logigear.training.test.DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

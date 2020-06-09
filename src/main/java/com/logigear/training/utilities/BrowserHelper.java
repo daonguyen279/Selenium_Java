@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class BrowserHelper {
     public static void setUpBrowser(String browser) {
         if (browser.equals("Chrome")) {
@@ -19,5 +21,6 @@ public class BrowserHelper {
             DriverManager.setDriver(new FirefoxDriver());
         }
         DriverManager.getDriver().manage().window().maximize();
+        DriverManager.getDriver().manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 }
