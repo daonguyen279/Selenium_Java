@@ -13,6 +13,7 @@
         <selenium.version>3.141.59</selenium.version>
         <testng.version>6.14.3</testng.version>
         <aspectj.version>1.8.10</aspectj.version>
+        <allure.version>2.13.2</allure.version>
     </properties>
 
     <dependencies>
@@ -33,9 +34,10 @@
             <version>0.18</version>
         </dependency>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.30</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -47,7 +49,7 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>2.13.3</version>
+            <version>${allure.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -72,6 +74,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>run_test.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -83,4 +88,18 @@
             </plugin>
         </plugins>
     </build>
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                    <reportDirectory>${basedir}\allure-results</reportDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
