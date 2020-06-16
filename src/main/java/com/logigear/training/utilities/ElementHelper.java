@@ -13,7 +13,7 @@ public class ElementHelper {
     WebElement runtimeElement;
     By locator;
 
-    public ElementHelper(By locator) {
+    public ElementHelper(java.lang.String locator) {
         super();
         this.locator = locator;
     }
