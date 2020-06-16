@@ -1,8 +1,8 @@
 package com.logigear.training.pages;
 import com.logigear.training.drivermanager.DriverManager;
 import org.openqa.selenium.By;
-
 import com.logigear.training.utilities.ElementHelper;
+import org.openqa.selenium.support.ui.Select;
 
 public class LoginPage {
 	ElementHelper tbxUserName = new ElementHelper(By.id("username"));
@@ -19,6 +19,11 @@ public class LoginPage {
 		tbxUserName.type(Username);
 		tbxPassword.type(Password);
 		btnLogIn.click();
+	}
+
+	public void switchRepositoryLV2inLoginPage(){
+		Select dropdown = new Select(DriverManager.getDriver().findElement(By.xpath("//select[@id='repository']")));
+		dropdown.selectByValue("SampleRepositoryLV2");
 	}
 
 	public void loginWithBlankUsernameAndPassword() {
