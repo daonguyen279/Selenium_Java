@@ -1,15 +1,17 @@
 package com.logigear.training.pages;
+import com.logigear.training.controls.common.LGButton;
+import com.logigear.training.controls.common.LGTextBox;
 import com.logigear.training.drivermanager.DriverManager;
 import org.openqa.selenium.By;
 
 import com.logigear.training.utilities.ElementHelper;
 
 public class LoginPage {
-	ElementHelper tbxUserName = new ElementHelper(By.id("username"));
+	LGTextBox tbxUserName = new LGTextBox("id=username");
 
-	ElementHelper tbxPassword = new ElementHelper(By.id("password"));
+	LGTextBox tbxPassword = new LGTextBox ("id=password");
 
-	ElementHelper btnLogIn = new ElementHelper(By.className("btn-login"));
+	LGButton btnLogIn = new LGButton("class=btn-login");
 
 	public String getLoginErrorMessageText() {
 		return DriverManager.getDriver().switchTo().alert().getText();
