@@ -1,8 +1,9 @@
-package com.logigear.training.test;
+package com.logigear.training.test.DA_LOGIN;
 
 import com.logigear.training.common.Constant;
 import com.logigear.training.pages.GeneralPage;
 import com.logigear.training.pages.LoginPage;
+import com.logigear.training.test.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
