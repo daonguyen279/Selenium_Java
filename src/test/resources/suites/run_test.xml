@@ -3,13 +3,13 @@
         %testngDTD;
         <!ATTLIST parameter value (Chrome | Firefox | IE) #REQUIRED >
 ]>
-
 <suite name="Suite" thread-count="2" parallel="classes">
     <test name="ChromeBrowserTest">
         <parameter name="browser" value="Chrome" />
         <classes>
             <class name="com.logigear.training.test.DA_LOGIN.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive"/>
             <class name="com.logigear.training.test.DA_LOGIN.DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly"/>
+            <class name="com.logigear.training.test.DA_MP.DA_MP_TC012_VerifyThatUserIsAbleToAddAdditionalPagesBesidesOverviewPagesSuccessfully"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
