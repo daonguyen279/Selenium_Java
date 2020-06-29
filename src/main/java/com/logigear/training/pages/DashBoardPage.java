@@ -1,14 +1,12 @@
 package com.logigear.training.pages;
 
-import com.logigear.training.controls.common.LGLink;
-import com.logigear.training.controls.common.LGTextBox;
 import com.logigear.training.controls.common.LGButton;
+import com.logigear.training.controls.common.LGLink;
 import com.logigear.training.controls.common.LGSelectBox;
-
-import org.openqa.selenium.By;
+import com.logigear.training.controls.common.LGTextBox;
+import io.qameta.allure.Attachment;
 import org.openqa.selenium.NoSuchElementException;
-
-import com.logigear.training.utilities.ElementHelper;
+import io.qameta.allure.Step;
 
 public class DashBoardPage {
 	LGLink lnkMyAccount = new LGLink("css=ul.head-menu > li:nth-of-type(5) [href='#']");
@@ -33,22 +31,24 @@ public class DashBoardPage {
 
 	LGLink lnkPageName= new LGLink("xpath=//a[@href='/TADashboard/c3nrdyly98ad.page']");
 
-
-
+	@Step("click my account")
 	public void clickMyAccount() {
 		txtLoginUsername.click();
 		lnkMyAccount.click();
 	}
 
+	@Step("click add page")
 	public void clickAddPage(){
 		lnkGlobal.click();
 		lnkAddPage.click();
 	}
 
+	@Step("enter page name '{pageName}'")
 	public void enterPageName(String pageName){
 		txtPageName.type(pageName);
 	}
 
+	@Step("input page information")
 	public  void inputPageInformation(String pageName, String parentPage, String columnNumber, String position){
 		txtPageName.type(pageName);
 		sltParentPage.selectByVisibleText(parentPage);
@@ -56,14 +56,17 @@ public class DashBoardPage {
 		sltPossition.selectByVisibleText(position);
 	}
 
+	@Step("submit page information")
 	public void submitPageInformation(){
 		btnOK.click();
 	}
 
+	@Attachment(value="login success text")
 	public String getLoginSuccessText() {
 		return txtLoginUsername.getText();
 	}
 
+	@Step("logout")
 	public void logout() {
 		try {
 			txtLoginUsername.click();
