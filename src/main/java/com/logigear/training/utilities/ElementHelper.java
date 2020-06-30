@@ -13,7 +13,7 @@ public class ElementHelper {
     WebElement runtimeElement;
     By locator;
 
-    public ElementHelper(java.lang.String locator) {
+    public ElementHelper() {
         super();
         this.locator = locator;
     }
@@ -61,8 +61,9 @@ public class ElementHelper {
                 getRuntimeElement());
     }
 
-    public void waitForVisibility() {
-        new WebDriverWait(DriverManager.getDriver(), 10).until(ExpectedConditions.visibilityOf(getRuntimeElement()));
+    public void waitForVisibility() throws InterruptedException {
+//        Thread.sleep(1000);
+        new WebDriverWait(DriverManager.getDriver(), 20).until(ExpectedConditions.visibilityOf(getRuntimeElement()));
     }
 
     public void waitForFrameToBeAvailableAndSwitchToIt() {
