@@ -8,71 +8,78 @@ import io.qameta.allure.Attachment;
 import org.openqa.selenium.NoSuchElementException;
 import io.qameta.allure.Step;
 
+import javax.annotation.Nullable;
+
 public class DashBoardPage {
-	LGLink lnkMyAccount = new LGLink("css=ul.head-menu > li:nth-of-type(5) [href='#']");
+    LGLink lnkMyAccount = new LGLink("css=ul.head-menu > li:nth-of-type(5) [href='#']");
 
-	LGLink lnkLogout = new LGLink("css=[href='logout.do']");
+    LGLink lnkLogout = new LGLink("css=[href='logout.do']");
 
-	LGLink txtLoginUsername= new LGLink("css=a[href='#Welcome']");
+    LGLink txtLoginUsername = new LGLink("css=a[href='#Welcome']");
 
-	LGLink lnkGlobal = new LGLink("xpath=//li[@class='mn-setting']/a[@href='javascript:void(0);']");
+    LGLink lnkGlobal = new LGLink("xpath=//li[@class='mn-setting']/a[@href='javascript:void(0);']");
 
-	LGLink lnkAddPage = new LGLink("xpath=//a[.='Add Page']");
+    LGLink lnkAddPage = new LGLink("xpath=//a[.='Add Page']");
 
-	LGTextBox txtPageName = new LGTextBox("id=name");
+    LGTextBox txtPageName = new LGTextBox("id=name");
 
-	LGSelectBox sltParentPage = new LGSelectBox("id=parent");
+    LGSelectBox sltParentPage = new LGSelectBox("id=parent");
 
-	LGSelectBox sltColumnNumber = new LGSelectBox("id=columnnumber");
+    LGSelectBox sltColumnNumber = new LGSelectBox("id=columnnumber");
 
-	LGSelectBox sltPossition = new LGSelectBox("id=afterpage");
+    LGSelectBox sltPossition = new LGSelectBox("id=afterpage");
 
-	LGButton btnOK = new LGButton("id=OK");
+    LGButton btnOK = new LGButton("id=OK");
 
-	LGLink lnkPageName= new LGLink("xpath=//a[@href='/TADashboard/c3nrdyly98ad.page']");
+    LGLink lnkPageName = new LGLink("xpath=//a[@href='/TADashboard/c3nrdyly98ad.page']");
 
-	@Step("click my account")
-	public void clickMyAccount() {
-		txtLoginUsername.click();
-		lnkMyAccount.click();
-	}
+    @Step("click my account")
+    public void clickMyAccount() {
+        txtLoginUsername.click();
+        lnkMyAccount.click();
+    }
 
-	@Step("click add page")
-	public void clickAddPage(){
-		lnkGlobal.click();
-		lnkAddPage.click();
-	}
+    @Step("click add page")
+    public void clickAddPage() {
+        lnkGlobal.click();
+        lnkAddPage.click();
+    }
 
-	@Step("enter page name '{pageName}'")
-	public void enterPageName(String pageName){
-		txtPageName.type(pageName);
-	}
+    @Step("enter page name '{pageName}'")
+    public void enterPageName(String pageName) {
+        txtPageName.type(pageName);
+    }
 
-	@Step("input page information")
-	public  void inputPageInformation(String pageName, String parentPage, String columnNumber, String position){
-		txtPageName.type(pageName);
-		sltParentPage.selectByVisibleText(parentPage);
-		sltColumnNumber.selectByVisibleText(columnNumber);
-		sltPossition.selectByVisibleText(position);
-	}
+    @Step("select parent page '{pageName}'")
+    public void selectParentPage(String pageName) {
+        txtPageName.type(pageName);
+    }
 
-	@Step("submit page information")
-	public void submitPageInformation(){
-		btnOK.click();
-	}
+    @Step("input page information")
+    public void inputPageInformation(String pageName, String parentPage, String columnNumber, String position) {
+        if (pageName != null) txtPageName.type(pageName);
+        if (parentPage != null) sltParentPage.selectByVisibleText(parentPage);
+        if (columnNumber != null) sltColumnNumber.selectByVisibleText(columnNumber);
+        if (position != null) sltPossition.selectByVisibleText(position);
+    }
 
-	@Attachment(value="login success text")
-	public String getLoginSuccessText() {
-		return txtLoginUsername.getText();
-	}
+    @Step("submit page information")
+    public void submitPageInformation() {
+        btnOK.click();
+    }
 
-	@Step("logout")
-	public void logout() {
-		try {
-			txtLoginUsername.click();
-			lnkLogout.click();
-		} catch (NoSuchElementException ex) {
+    @Attachment(value = "login success text")
+    public String getLoginSuccessText() {
+        return txtLoginUsername.getText();
+    }
 
-		}
-	}
+    @Step("logout")
+    public void logout() {
+        try {
+            txtLoginUsername.click();
+            lnkLogout.click();
+        } catch (NoSuchElementException ex) {
+
+        }
+    }
 }
