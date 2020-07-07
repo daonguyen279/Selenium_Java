@@ -9,7 +9,7 @@
         <classes>
             <class name="com.logigear.training.test.DA_LOGIN.DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive"/>
             <class name="com.logigear.training.test.DA_LOGIN.DA_LOGIN_TC008_VerifyThatPasswordWithSpecialCharactersIsWorkingCorrectly"/>
-            <class name="com.logigear.training.test.DA_MP.DA_MP"/>
+            <class name="com.logigear.training.test.DA_MP.DA_MP_TC0012_VerifyThatUserIsAbleToAddAdditionalPagesBesidesOverviewPageSuccessfully"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
