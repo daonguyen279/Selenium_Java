@@ -4,13 +4,17 @@ import com.logigear.training.controls.common.LGButton;
 import com.logigear.training.controls.common.LGLink;
 import com.logigear.training.controls.common.LGSelectBox;
 import com.logigear.training.controls.common.LGTextBox;
+import com.logigear.training.forms.NewPageForm;
 import io.qameta.allure.Attachment;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import io.qameta.allure.Step;
-
-import javax.annotation.Nullable;
+import org.openqa.selenium.WebElement;
+import java.util.List;
 
 public class DashBoardPage {
+    LGLink divMenu = new LGLink("css=ul.head-menu");
+
     LGLink lnkMyAccount = new LGLink("css=ul.head-menu > li:nth-of-type(5) [href='#']");
 
     LGLink lnkLogout = new LGLink("css=[href='logout.do']");
@@ -56,11 +60,11 @@ public class DashBoardPage {
     }
 
     @Step("input page information")
-    public void inputPageInformation(String pageName, String parentPage, String columnNumber, String position) {
-        if (pageName != null) txtPageName.type(pageName);
-        if (parentPage != null) sltParentPage.selectByVisibleText(parentPage);
-        if (columnNumber != null) sltColumnNumber.selectByVisibleText(columnNumber);
-        if (position != null) sltPossition.selectByVisibleText(position);
+    public void inputPageInformation(NewPageForm newPage) {
+        if (newPage.pageName != null) txtPageName.type(newPage.pageName);
+        if (newPage.parentPage != null) sltParentPage.selectByVisibleText(newPage.parentPage);
+        if (newPage.columnNumber != null) sltColumnNumber.selectByVisibleText(newPage.columnNumber);
+        if (newPage.position != null) sltPossition.selectByVisibleText(newPage.position);
     }
 
     @Step("submit page information")
@@ -81,5 +85,11 @@ public class DashBoardPage {
         } catch (NoSuchElementException ex) {
 
         }
+    }
+
+    public Integer getPagePosition(String pageName) {
+        List<WebElement> children = divMenu.getRuntimeElement().findElements(By.tagName("li"));
+        LGLink lnkPage = new LGLink("xpath=//a[.='" + pageName + "']");
+        return children.indexOf(lnkPage);
     }
 }
