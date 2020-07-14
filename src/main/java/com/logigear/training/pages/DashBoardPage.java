@@ -4,6 +4,7 @@ import com.logigear.training.controls.common.LGButton;
 import com.logigear.training.controls.common.LGLink;
 import com.logigear.training.controls.common.LGSelectBox;
 import com.logigear.training.controls.common.LGTextBox;
+import com.logigear.training.drivermanager.DriverManager;
 import com.logigear.training.forms.NewPageForm;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.By;
@@ -21,7 +22,7 @@ public class DashBoardPage {
 
     LGLink txtLoginUsername = new LGLink("css=a[href='#Welcome']");
 
-    LGLink lnkGlobal = new LGLink("xpath=//li[@class='mn-setting']/a[@href='javascript:void(0);']");
+    LGLink lnkGlobal = new LGLink("xpath=//li[@class='mn-setting']/a");
 
     LGLink lnkAddPage = new LGLink("xpath=//a[.='Add Page']");
 
@@ -87,9 +88,25 @@ public class DashBoardPage {
         }
     }
 
+    @Step("get page postition ")
     public Integer getPagePosition(String pageName) {
         List<WebElement> children = divMenu.getRuntimeElement().findElements(By.tagName("li"));
         LGLink lnkPage = new LGLink("xpath=//a[.='" + pageName + "']");
         return children.indexOf(lnkPage);
+    }
+
+    @Step("check that the position of '{page2}' is next to '{page1}'")
+    public boolean checkPagePosition(String page1, String page2) {
+        List<WebElement> links = DriverManager.getDriver().findElements(By.xpath("//div[@id=\"main-menu\"]//li/a[contains(@href, \"/TADashboard\")]"));
+        boolean check = false;
+        for (int i=0; i<links.size();i++) {
+            if (links.get(i).getText().equalsIgnoreCase(page1)) {
+                int nextPage = i+1;
+                if (links.get(nextPage).getText().equalsIgnoreCase(page2)) {
+                    System.out.println("Section " + i + ":" + links.get(i+1).getText());
+                    check = true;
+                }
+            }
+        } return check;
     }
 }

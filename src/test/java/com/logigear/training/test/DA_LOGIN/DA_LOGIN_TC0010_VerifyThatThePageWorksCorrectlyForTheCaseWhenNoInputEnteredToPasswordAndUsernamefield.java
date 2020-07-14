@@ -12,7 +12,7 @@ public class DA_LOGIN_TC0010_VerifyThatThePageWorksCorrectlyForTheCaseWhenNoInpu
 	LoginPage loginPage = new LoginPage();
 	DashBoardPage dashBoardPage = new DashBoardPage();
 
-	@Test
+	@Test(description = "Verify that the page works correctly for the case when no input entered to Password and Username field")
 	public void TC0010() {
 		loginPage.loginWithBlankUsernameAndPassword();
 		Assert.assertEquals( Constant.LOGIN_ERROR_MESSAGE, loginPage.getLoginErrorMessageText());
