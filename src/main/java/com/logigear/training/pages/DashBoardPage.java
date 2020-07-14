@@ -4,6 +4,7 @@ import com.logigear.training.controls.common.LGButton;
 import com.logigear.training.controls.common.LGLink;
 import com.logigear.training.controls.common.LGSelectBox;
 import com.logigear.training.controls.common.LGTextBox;
+import com.logigear.training.controls.common.LGCheckbox;
 import com.logigear.training.drivermanager.DriverManager;
 import com.logigear.training.forms.NewPageForm;
 import io.qameta.allure.Attachment;
@@ -38,6 +39,9 @@ public class DashBoardPage {
 
     LGLink lnkPageName = new LGLink("xpath=//a[@href='/TADashboard/c3nrdyly98ad.page']");
 
+    LGCheckbox chbIsPublic = new LGCheckbox ("id=ispublic");
+
+
     @Step("click my account")
     public void clickMyAccount() {
         txtLoginUsername.click();
@@ -68,6 +72,10 @@ public class DashBoardPage {
         if (newPage.position != null) sltPossition.selectByVisibleText(newPage.position);
     }
 
+    @Step("check on is public checkbox")
+    public void checkOnIsPublicCheckbox() {
+        chbIsPublic.check();
+    }
     @Step("submit page information")
     public void submitPageInformation() {
         btnOK.click();
