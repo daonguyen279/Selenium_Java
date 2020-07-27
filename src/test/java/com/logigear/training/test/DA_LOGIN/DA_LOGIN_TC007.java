@@ -7,11 +7,11 @@ import com.logigear.training.pages.LoginPage;
 import com.logigear.training.pages.DashBoardPage;
 
 
-public class DA_LOGIN_TC007_VerifyThatUsernameIsNotCaseSensitive extends BaseTest {
+public class DA_LOGIN_TC007 extends BaseTest {
 	LoginPage loginPage = new LoginPage();
 	DashBoardPage dashBoardPage = new DashBoardPage();
 
-	@Test
+	@Test(description = "Verify that Username is not case sensitive")
 	public void TC007() {
 		loginPage.loginWith(Constant.UPERCASE_USERNAME, Constant.PASSWORD);
 		Assert.assertEquals( Constant.UPERCASE_USERNAME, dashBoardPage.getLoginSuccessText());
