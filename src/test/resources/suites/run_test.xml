@@ -2,7 +2,7 @@
 <!DOCTYPE suite [<!ENTITY % testngDTD SYSTEM "http://testng.org/testng-1.0.dtd">
         %testngDTD;
         <!ATTLIST parameter value (Chrome | Firefox | IE) #REQUIRED >
-]>
+        ]>
 <suite name="Suite" thread-count="2" parallel="classes">
     <test name="ChromeBrowserTest">
         <parameter name="browser" value="Chrome" />
