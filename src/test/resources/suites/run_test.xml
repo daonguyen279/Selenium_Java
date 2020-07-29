@@ -7,7 +7,7 @@
     <test name="ChromeBrowserTest">
         <parameter name="browser" value="Chrome" />
         <classes>
-           <class name="com.logigear.training.test.DA_LOGIN.DA_LOGIN_TC007"/>
+           <class name="com.logigear.training.test.DA_DP.DA_DP_TC065"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

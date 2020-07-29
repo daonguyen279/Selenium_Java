@@ -27,6 +27,10 @@ public class DashBoardPage {
 
     LGLink lnkAddPage = new LGLink("xpath=//a[.='Add Page']");
 
+    LGLink linkAdminister = new LGLink("css=#header .head-menu a[href=\"#Administer\"]");
+
+    LGLink linkDataProfiles = new LGLink("css=#ulAdminister a[href=\"profiles.jsp\"]");
+
     LGTextBox txtPageName = new LGTextBox("id=name");
 
     LGSelectBox sltParentPage = new LGSelectBox("id=parent");
@@ -52,6 +56,12 @@ public class DashBoardPage {
     public void clickAddPage() {
         lnkGlobal.click();
         lnkAddPage.click();
+    }
+
+    @Step("click data profiles menu")
+    public void clickDataProfilesMenu() {
+        linkAdminister.click();
+        linkDataProfiles.click();
     }
 
     @Step("enter page name '{pageName}'")

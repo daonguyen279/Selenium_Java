@@ -8,6 +8,7 @@ public class Constant {
 	public static String SPECIALUSERNAME_PASSWORD = "taadmin";
 	public static String PASSWORD = "taadmin";
 	public static String LOGIN_ERROR_MESSAGE= "Please enter username!";
+	public static String REPOSITORY = "SampleRepository";
     public static String BASE_URL = "https://cc0de9b0c966.ngrok.io/TADashboard/login.jsp";
 }
 
