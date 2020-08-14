@@ -16,6 +16,7 @@ public class DA_MP_TC0014 extends BaseTest {
 
         LoginPage loginPage = new LoginPage();
         loginPage.loginWith(Constant.UPERCASE_USERNAME, Constant.PASSWORD);
+
         DashBoardPage dashBoardPage = new DashBoardPage();
         dashBoardPage.clickAddPage();
         dashBoardPage.inputPageInformation(new NewPageForm() {{
@@ -23,7 +24,9 @@ public class DA_MP_TC0014 extends BaseTest {
         }});
         dashBoardPage.checkOnIsPublicCheckbox();
         dashBoardPage.submitPageInformation();
+
         dashBoardPage.logout();
+
         loginPage = new LoginPage();
         loginPage.loginWith(Constant.LOWERCASE_USERNAME, Constant.PASSWORD);
 

@@ -20,8 +20,11 @@ public class DA_DP_TC066 extends BaseTest {
 	public void TC066() {
 		loginPage.selectRepository(Constant.REPOSITORY);
 		loginPage.loginWith(Constant.UPERCASE_USERNAME, Constant.PASSWORD);
+
 		Assert.assertEquals( Constant.UPERCASE_USERNAME, dashBoardPage.getLoginSuccessText());
+
 		dashBoardPage.clickDataProfilesMenu();
+
 		Assert.assertTrue(dataProfilesPage.editButtonsList().isEmpty());
 		Assert.assertTrue(dataProfilesPage.deleteButtonsList().isEmpty());
 	}

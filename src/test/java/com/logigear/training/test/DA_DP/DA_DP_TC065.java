@@ -20,8 +20,10 @@ public class DA_DP_TC065 extends BaseTest {
 	public void TC065() {
 		loginPage.selectRepository(Constant.REPOSITORY);
 		loginPage.loginWith(Constant.UPERCASE_USERNAME, Constant.PASSWORD);
+
 		Assert.assertEquals( Constant.UPERCASE_USERNAME, dashBoardPage.getLoginSuccessText());
 		dashBoardPage.clickDataProfilesMenu();
+
 		List<String> profiles = dataProfilesPage.profilesList();
 		Assert.assertTrue(profiles.contains("Action Implementation By Status"));
 		Assert.assertTrue(profiles.contains("Test Case Execution"));

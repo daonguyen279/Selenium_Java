@@ -18,6 +18,7 @@ public class DA_MP_TC0013 extends BaseTest {
 
         LoginPage loginPage = new LoginPage();
         loginPage.loginWith(Constant.UPERCASE_USERNAME, Constant.PASSWORD);
+
         DashBoardPage dashBoardPage = new DashBoardPage();
         dashBoardPage.clickAddPage();
         dashBoardPage.inputPageInformation(new NewPageForm() {{

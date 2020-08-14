@@ -15,12 +15,14 @@ public class DA_MP_TC0012 extends BaseTest {
         String newPageName = "New Page";
         LoginPage loginPage = new LoginPage();
         loginPage.loginWith(Constant.UPERCASE_USERNAME, Constant.PASSWORD);
+
         DashBoardPage dashBoardPage = new DashBoardPage();
         dashBoardPage.clickAddPage();
         dashBoardPage.inputPageInformation(new NewPageForm() {{
             pageName = newPageName;
         }});
         dashBoardPage.submitPageInformation();
+
         Assert.assertNotEquals(dashBoardPage.getPagePosition(newPageName), -1);
         Assert.assertEquals((int) dashBoardPage.getPagePosition(newPageName),
                 (int)dashBoardPage.getPagePosition("Overview") + 1);
